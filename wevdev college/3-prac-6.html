@@ -1,0 +1,9 @@
+<script>
+    const color=['#FF5733', '#33FF57', '#3357FF', '#F0FF33']; 
+    let index=0
+
+    setInterval( ()=>{
+        document.body.style.backgroundColor = color[index];
+        index =(index+1)%color.length;
+    },5000)
+</script>

@@ -1,0 +1,34 @@
+<body>
+    <form onsubmit="return validateform() ">
+        <input type="text" id="name" placeholder="write here"><br><br>
+        <input type="email" id="email" placeholder="email"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validateform(){
+            const name=document.getElementById('name').value.trim()
+            const email=document.getElementById('email').value.trim()
+
+            if (!name || !email){
+                alert('please fill the form')
+                return false
+            }
+            if (!validateemail(email)){
+                alert('invalid email format');
+                return false;
+            }
+
+            return true;
+
+
+
+        }
+    function validateemail(email){
+        const regex=/^[^\s@]+@[^\s@]+.\[^\s@]+$/;
+        const testregex=regex.test(email);
+        return testregex;
+    }
+        
+
+    </script>
+</body> 

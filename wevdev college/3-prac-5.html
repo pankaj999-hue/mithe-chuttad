@@ -1,0 +1,15 @@
+<select id="dropdown">
+    <option value="">Select an option</option>
+</select>
+
+<script>
+const options = ["Option 1", "Option 2", "Option 3"];
+const dropdown = document.getElementById('dropdown');
+
+options.forEach(option => {
+    const opt = document.createElement('option'); // Create a new <option> tag
+    opt.value = option; // Set its value
+    opt.textContent = option; // Set what it displays
+    dropdown.appendChild(opt); // Add it to the dropdown
+});
+</script>

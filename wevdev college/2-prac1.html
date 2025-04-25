@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>
+prac 4
+</title>
+<style>
+    .styled-form{
+        height: 300px;
+        border: solid;
+        border-color: black;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(241, 227, 146);
+    }
+    .styled-form input{
+        padding: 5px;
+        margin-bottom: 12px;
+
+    }
+    .stylebuttom{
+        width: 80px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        font-size:bold;
+        font-size: 15px;
+        cursor:pointer;
+        border:none;
+
+    }
+    .stylebuttom:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+        border-radius: 60px;
+
+    }
+    .stylebuttom:active{
+        background-color: blue;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <form class="styled-form">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required><br><br>
+
+            <label>gender:</label><br><br>
+            <input type="radio" id="name" name="gender" value="male">
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">name</label><br><br>
+
+            <label for="country">country</label>
+            <select name="country">
+                <option value="india">india</option>
+                <option value="australia">australia</option>
+                <option value="america">america</option>
+            </select><br><br>
+
+            <input type="submit" value="submit" class="stylebuttom">
+
+        </form>
+    </div>
+</body>
+</html>
+
+
